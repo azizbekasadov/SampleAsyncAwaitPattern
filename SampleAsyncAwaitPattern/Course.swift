@@ -1,8 +1,16 @@
+//
+//  Course.swift
+//  SampleAsyncAwaitPattern
+//
+//  Created by Azizbek Asadov on 28.09.2025.
+//
 
-struct Course: Decodable {
+import Foundation
+
+struct Course: Decodable, Identifiable {
     let id: Int
     let name: String
     let link: String
-    let imageURL: String
+    let imageUrl: String
     let numberOfLessons: Int
 }
